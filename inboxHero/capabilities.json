@@ -65,7 +65,7 @@
       "tier": "C",
       "claim": "Generates a three-pane view (Pending Actions, Flagged, Commitments) reproducible from a run. Commitments cite their source message(s) and surfaced conflicts are highlighted. A message with an outcome recorded in both actions.json and commitments.json is de-duplicated in favor of the commitment record, not shown twice as two different types.",
       "command": "python demo.py --cap R6",
-      "observable": "Writes dashboard.html/json with pending=29, flagged=8, commitments=4. The Commitments pane shows both m038 and m043 highlighted red with a CONFLICT detail citing preference:no_meetings_before.",
+      "observable": "Writes dashboard.html/json with pending=28, flagged=8, commitments=5. The Commitments calendar shows m043 highlighted red with a CONFLICT detail citing preference:no_meetings_before, and m040 as a multi-message entry citing source_message_ids=[m040, m038] (deadline resolved from m038's date minus m040's stated offset).",
       "evidence": "dashboard.html and dashboard.json; trace.jsonl events tagged cap=R6"
     },
     {

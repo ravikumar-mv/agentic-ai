@@ -1,0 +1,27 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.claude/
+
+# Derived state (plan.md 3j) -- regenerable from inbox.json + code,
+# create-if-missing, never meant to be committed mid-development.
+inbox_state.json
+actions.json
+commitments.json
+prefs.json
+embeddings_cache.json
+dashboard.json
+dashboard.html
+x1_legal.json
+x2_thread_summaries.json
+x3_time_conflicts.json
+
+# Submission evidence (outbox/, trace.jsonl) is added back deliberately
+# at zip time from a real full run -- not tracked during development.
+outbox/
+trace.jsonl
+
+# Internal design/working doc used to drive the build -- not part of the
+# submission itself, for now.
+plan.md
